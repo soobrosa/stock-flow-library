@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Helvetica,Arial,sans-serif">
+<rect width="760" height="300" fill="white"/>
+<defs><marker id="arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#111"/></marker></defs>
+<text x="380.0" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#111">40b. C-ROADS carbon cycle (Sterman et al. 2013 Eqs.1-5)</text>
+<line x1="238" y1="230" x2="340" y2="230" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="280" y="221" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 289 230)"/>
+<text x="289" y="215" text-anchor="middle" font-size="12" fill="#111">NPP / respiration</text>
+<line x1="238" y1="80" x2="340" y2="80" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="280" y="71" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 289 80)"/>
+<text x="289" y="65" text-anchor="middle" font-size="12" fill="#111">uptake / release (Revelle)</text>
+<line x1="458" y1="80" x2="560" y2="80" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="500" y="71" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 509 80)"/>
+<text x="509" y="65" text-anchor="middle" font-size="12" fill="#111">eddy diffusion</text>
+<text x="560" y="150" text-anchor="middle" font-size="12" fill="#333">emissions (scenario) into atmosphere</text>
+<rect x="120" y="60" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="179.0" y="84.0" text-anchor="middle" font-size="12.5" fill="#111">Atmosphere</text>
+<rect x="120" y="210" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="179.0" y="234.0" text-anchor="middle" font-size="12.5" fill="#111">Biomass</text>
+<rect x="340" y="210" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="399.0" y="234.0" text-anchor="middle" font-size="12.5" fill="#111">Soils</text>
+<rect x="340" y="60" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="399.0" y="84.0" text-anchor="middle" font-size="12.5" fill="#111">Mixed layer</text>
+<rect x="560" y="60" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="619.0" y="84.0" text-anchor="middle" font-size="12.5" fill="#111">Deep ocean (4 layers)</text>
+</svg>

@@ -7,7 +7,14 @@ or models directly convertible to stocks and flows, curated as build cases for
 - `system-dynamics-stock-flow-sources.md` — the annotated bibliography (books, papers,
   twelve convertible domains, collection status).
 - `poietic-mcp-cases.md` — 48 build cases: stocks, flows, and key auxiliaries for each,
-  including five re-specified in detail from the actual paper text (section 6).
+  re-specified with full stock/flow/auxiliary detail (fidelity-tagged `[full-text]` / `[canonical]`).
+- `diagrams/` — original SVG stock-flow diagrams for 13 flagship cases, rendered by
+  `gen_diagrams.py` (regenerate: `python3 gen_diagrams.py`).
+
+| | |
+|---|---|
+| ![rework cycle](diagrams/rework_cycle.svg) | ![SIR](diagrams/sir.svg) |
+| ![iron cycle](diagrams/iron_cycle.svg) | ![C-ROADS](diagrams/croads_carbon.svg) |
 
 The PDFs themselves are **not committed** (copyright). To fetch the open-access subset:
 

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Helvetica,Arial,sans-serif">
+<rect width="760" height="300" fill="white"/>
+<defs><marker id="arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#111"/></marker></defs>
+<text x="380.0" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#111">48. Anthropogenic iron cycle (Muller et al. 2006 PNAS)</text>
+<line x1="200" y1="60" x2="310" y2="120" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="246" y="81" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 255 90)"/>
+<text x="255" y="75" text-anchor="middle" font-size="12" fill="#111">fabrication inflow</text>
+<line x1="398" y1="140" x2="560" y2="140" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="471" y="131" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 480 140)"/>
+<text x="480" y="125" text-anchor="middle" font-size="12" fill="#111">end-of-life = lifetime convolution</text>
+<polyline points="600,120 620,220 120,220 120,80" fill="none" stroke="#555" stroke-width="1.3"/>
+<text x="126" y="214" font-size="11" fill="#555">scrap recycling loop (yield GF)</text>
+<polyline points="340,200 340,250 660,250 660,150" fill="none" stroke="#555" stroke-width="1.3"/>
+<text x="666" y="244" font-size="11" fill="#555">demand: replacement + growth</text>
+<rect x="280" y="120" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="339.0" y="144.0" text-anchor="middle" font-size="12.5" fill="#111">Iron in use (Tg)</text>
+<rect x="80" y="40" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="139.0" y="64.0" text-anchor="middle" font-size="12.5" fill="#111">Lithosphere ore</text>
+<rect x="560" y="120" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="619.0" y="144.0" text-anchor="middle" font-size="12.5" fill="#111">Scrap / EOL</text>
+</svg>

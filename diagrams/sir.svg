@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Helvetica,Arial,sans-serif">
+<rect width="760" height="300" fill="white"/>
+<defs><marker id="arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#111"/></marker></defs>
+<text x="380.0" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#111">36. SIR, constant-rate case (Kermack &amp; McKendrick 1927 §10)</text>
+<line x1="238" y1="170" x2="340" y2="170" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="280" y="161" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 289 170)"/>
+<text x="289" y="155" text-anchor="middle" font-size="12" fill="#111">infection = kappa*S*I</text>
+<line x1="458" y1="170" x2="560" y2="170" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="500" y="161" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 509 170)"/>
+<text x="509" y="155" text-anchor="middle" font-size="12" fill="#111">removal = ell*I</text>
+<text x="380" y="120" text-anchor="middle" font-size="12" fill="#333">threshold N0 = ell / kappa</text>
+<rect x="120" y="150" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="179.0" y="174.0" text-anchor="middle" font-size="12.5" fill="#111">Susceptible</text>
+<rect x="340" y="150" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="399.0" y="174.0" text-anchor="middle" font-size="12.5" fill="#111">Infectious</text>
+<rect x="560" y="150" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="619.0" y="174.0" text-anchor="middle" font-size="12.5" fill="#111">Removed</text>
+</svg>

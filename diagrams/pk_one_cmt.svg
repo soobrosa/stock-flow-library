@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Helvetica,Arial,sans-serif">
+<rect width="760" height="300" fill="white"/>
+<defs><marker id="arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#111"/></marker></defs>
+<text x="380.0" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#111">43. One-compartment PK (Teorell 1937; Gibaldi &amp; Perrier)</text>
+<line x1="318" y1="170" x2="470" y2="170" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="381" y="161" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 390 170)"/>
+<text x="390" y="155" text-anchor="middle" font-size="12" fill="#111">absorption = ka*Gut</text>
+<line x1="588" y1="170" x2="690" y2="170" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="631" y="161" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 640 170)"/>
+<text x="640" y="155" text-anchor="middle" font-size="12" fill="#111">elimination = (Cl/V)*Plasma</text>
+<rect x="200" y="150" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="259.0" y="174.0" text-anchor="middle" font-size="12.5" fill="#111">Drug in gut</text>
+<rect x="470" y="150" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="529.0" y="174.0" text-anchor="middle" font-size="12.5" fill="#111">Drug in plasma</text>
+</svg>

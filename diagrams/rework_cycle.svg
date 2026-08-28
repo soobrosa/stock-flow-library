@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Helvetica,Arial,sans-serif">
+<rect width="760" height="300" fill="white"/>
+<defs><marker id="arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#111"/></marker></defs>
+<text x="380.0" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill="#111">21. Rework cycle (Cooper 1980; Lyneis &amp; Ford 2007 Fig.1)</text>
+<line x1="188" y1="110" x2="300" y2="110" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="231" y="101" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 240 110)"/>
+<text x="240" y="95" text-anchor="middle" font-size="12" fill="#111">accomplish (error fraction)</text>
+<line x1="359" y1="130" x2="359" y2="210" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="350" y="161" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 359 170)"/>
+<text x="359" y="155" text-anchor="middle" font-size="12" fill="#111">error split</text>
+<line x1="359" y1="230" x2="178" y2="230" stroke="#111" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="259" y="221" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.5" transform="rotate(45 268 230)"/>
+<text x="268" y="215" text-anchor="middle" font-size="12" fill="#111">discovery (delayed)</text>
+<polyline points="129,210 129,130" fill="none" stroke="#555" stroke-width="1.3"/>
+<text x="135" y="124" font-size="11" fill="#555">rework doing</text>
+<text x="240" y="70" text-anchor="middle" font-size="12" fill="#333">productivity, error fraction (GF: overtime, dilution)</text>
+<rect x="70" y="90" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="129.0" y="114.0" text-anchor="middle" font-size="12.5" fill="#111">Work to Do</text>
+<rect x="300" y="90" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="359.0" y="114.0" text-anchor="middle" font-size="12.5" fill="#111">Work Done</text>
+<rect x="300" y="210" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="359.0" y="234.0" text-anchor="middle" font-size="12.5" fill="#111">Undiscovered Rework</text>
+<rect x="60" y="210" width="118" height="40" rx="4" fill="#fff" stroke="#111" stroke-width="1.6"/>
+<text x="119.0" y="234.0" text-anchor="middle" font-size="12.5" fill="#111">Rework to Do</text>
+</svg>
