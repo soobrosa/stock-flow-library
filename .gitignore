@@ -1,0 +1,4 @@
+# PDFs stay local (copyright) — reproduce with download.sh
+*.pdf
+
+.DS_Store
