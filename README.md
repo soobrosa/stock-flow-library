@@ -27,6 +27,6 @@ The PDFs themselves are **not committed** (copyright). To fetch the open-access 
 ./download.sh
 ```
 
-Paywalled sources (Godley & Lavoie, Sterman 2000, Cooper 1980, etc.) must be obtained
-via institutional access, Archive.org lending, or author request — see the status
+Paywalled sources (Godley & Lavoie, Sterman 2000, Cooper 1980, etc.) remain to be obtained
+via institutional access, library lending, or author request — see the status
 section of the sources file for the full missing list and what worked/failed.
