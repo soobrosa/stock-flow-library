@@ -21,6 +21,17 @@ overview (Sterman 2013), Zhang SFD (2021), WEEE SFD (Guo et al.), US iron cycle
 (Müller 2006), Lotka figs 13-14 (1925), Gordon figs 4 and 6 (1954), FREE carbon cycle
 (Fiddaman 1997).
 
+## Disclaimer
+
+This repository is a **non-commercial, educational research project**. Its purpose is to
+study and document the structure of system-dynamics models for teaching and model-building
+practice. No copyrighted source documents (PDFs, epubs) are distributed here — only
+original written summaries, equation transcriptions for scholarly reference, and limited
+low-resolution figure excerpts reproduced for citation, criticism, and review purposes,
+which we believe constitutes fair use. All rights to the underlying works remain with
+their authors and publishers. If you are a rights holder and believe any content here
+infringes your rights, please open an issue and we will promptly remove or replace it.
+
 The PDFs themselves are **not committed** (copyright). To fetch the open-access subset:
 
 ```bash
