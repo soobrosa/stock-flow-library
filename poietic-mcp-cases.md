@@ -7,7 +7,7 @@
 - `[full-text]` — extracted from the actual paper/book (PDF in the library; verified equations/parameters)
 - `[canonical]` — re-specified from the standard documented structure of a well-known model (text not in library)
 
-**Now in the library as full text** (Anna's Archive haul, 2026-08-29): Sterman 2000 *Business
+**Now in the library as full text** (added 2026-08-29): Sterman 2000 *Business
 Dynamics* (1008 pp), Forrester 1961 *Industrial Dynamics* (480 pp), Forrester 1969 *Urban
 Dynamics* (scan), Meadows 1972 *Limits to Growth*, Meadows 2008 *Thinking in Systems* (epub),
 Godley & Lavoie 2007 *Monetary Economics* (2nd ed., 575 pp). Book-derived case upgrades:

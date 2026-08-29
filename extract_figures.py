@@ -20,7 +20,7 @@ GAP_PT = 28          # vertical gap (points) that ends a figure block
 
 # (name, pdf stem, caption regex, mode, page hint)
 FIGURES = [
-    # --- books (Anna's Archive haul) ---
+    # --- books ---
     ("sterman_sfd",              "Sterman_2000_Business-Dynamics",       r"Figure 2-6 shows",                         "above", 83),
     ("gl_sim_balance",           "Godley-Lavoie_2007_Monetary-Economics", r"Balance sheet of Model SIM",              "above", 104),
     ("gl_sim_tfm",               "Godley-Lavoie_2007_Monetary-Economics", r"Accounting \(transactions\) matrix for Model SIM", "above", 105),
