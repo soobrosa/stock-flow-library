@@ -7,6 +7,12 @@
 - `[full-text]` — extracted from the actual paper/book (PDF in the library; verified equations/parameters)
 - `[canonical]` — re-specified from the standard documented structure of a well-known model (text not in library)
 
+**Now in the library as full text** (Anna's Archive haul, 2026-08-29): Sterman 2000 *Business
+Dynamics* (1008 pp), Forrester 1961 *Industrial Dynamics* (480 pp), Forrester 1969 *Urban
+Dynamics* (scan), Meadows 1972 *Limits to Growth*, Meadows 2008 *Thinking in Systems* (epub),
+Godley & Lavoie 2007 *Monetary Economics* (2nd ed., 575 pp). Book-derived case upgrades:
+A1–A6 are now `[full-text]`-anchored (G&L's Model SIM equations in ch. 3, pp. 103–108).
+
 Legend: stocks **[S]**, flows **[F]**, auxiliaries **[A]**. ⚠ = needs aging-chain/cohort pattern
 (Poietic has no arrays). GF = graphical function.
 
@@ -18,8 +24,11 @@ Legend: stocks **[S]**, flows **[F]**, auxiliaries **[A]**. ⚠ = needs aging-ch
 1. **Inventory–workforce oscillation**: [S] Inventory, Workforce, Backlog; [F] Production start (desired production smoothed by inventory-coverage gap), Hiring/Layoff (workforce gap / adjustment time), Order fulfillment; [A] desired inventory (weeks-of-supply × demand), delivery delay, productivity. Signature behavior: damped oscillation from the two nested negative loops (inventory → production; workforce → output) with delays.
 2. **Advertising–sales loop**: [S] Sales backlog, Brand awareness; [F] orders, advertising spend; [A] ad budget as function of backlog (GF), awareness decay. Reinforcing loop: sales → profit → ads → awareness → orders.
 
-### A2. Urban Dynamics — Forrester (1969) `[canonical]` ⚠
-3. **City model**: [S] New housing, Middle housing, Slum housing (aging chain: New→Middle→Slum→demolition), Premium business, Light industry, Worker-underclass, Worker-middle-class, Managerial-professional population; [F] construction (driven by available land and attractiveness multipliers), housing aging/decay, demolition, in/out-migration by skill class; [A] land fraction occupied, attractiveness = f(tax base, jobs-to-workers ratio, housing availability per class) — GFs. Archetype cohort case: land as a fixed constraint closes all loops.
+### A2. Urban Dynamics — Forrester (1969) `[full-text]` ⚠ (scan; OCR-mined)
+3. **City model**: [S] Premium housing, Worker housing, Underemployed(slum) housing (3-level housing chain) · New enterprise, Mature business, Declining industry (3-level business chain) · Managerial-professional, Labor, Underemployed population (3-level people chain) — units: housing units / enterprise units / people (initials: PH 14,470 · WH 450,300 · UH 174,300 · MB 11,300 · DI 18,000 · MP 96,000 · L 530,800 · U 316,900).
+   - [F] Housing: premium-housing construction, premium→worker obsolescence, worker-housing construction (direct), worker→underemployed obsolescence, low-cost-housing program creation, slum-housing demolition. Business: new-enterprise construction, new→mature aging, mature→declining aging, declining-industry demolition. People: arrival/departure rates per class (attractiveness-driven).
+   - [A] Example rate law (Eq 82–84, p. 96–97): `WHC.KL = (WHCN)(WH.K)·WHM.K` — worker-housing construction = normal rate × existing stock (area-size proxy) × multiplier WHM, which bundles WHAM (adequacy: labor/worker-housing ratio GF), WHUM (labor/underemployed GF), tax, land, and enterprise multipliers. Perceive-and-act delays on attractiveness (perceived AMMP = smoothed AMM). Job multipliers from employment mixes: a new-enterprise unit employs 4 managers + 20 labor + 10 underemployed.
+   - Signature behavior: growth → stagnation → decay as land fills and structures age; the classic policy paradoxes (slum demolition → more underemployed, not less). Diagram: `figures/urban_dynamics_fig2-4.png` (nine levels, 22 rates, three subsystems).
 
 ### A3. Study Notes — Goodman (1974) `[canonical]`
 4. **Coffee/commodity price stabilizer**: [S] commodity inventory; [F] harvest (weather-perturbed), consumption; [A] price = f(inventory-to-consumption ratio) GF — steeply convex; optional [S] buffer-stock held by stabilization authority, release/purchase flows. Oscillator + policy dampener.
@@ -212,3 +221,11 @@ US 1900–2004, top-down MFA (units Tg Fe):
 - **Already in the repo:** Capital model (case 10) is the `capital.test.mjs` fixture; fishing economy (11) is the README example.
 - **Full-text specs available (15):** cases 21, 27, 32, 34, 35, 36, 37, 38, 39, 40, 42, 45, 46, 48 + C-ROADS in 6.9 — from PDFs in `stock-flow-library/`.
 - **Calibration data anchors:** Bombay plague fit (6.6), Jinan parameters (6.2), Leslie Table 5 (6.8), 1995 US vehicle sales (6.8), C-ROADS fit metrics (6.9), iron-cycle lifetimes (6.11).
+
+### 6.12 Model SIM — Godley & Lavoie 2007, ch. 3 (upgrades case 37) `[full-text]`
+The complete simplest SFC model, from pp. 103–108 (balance sheet p. 104, transactions matrix p. 105, equations in Appendix 3.1):
+- **Balance-sheet stocks:** [S] household money H_h, household bills B_h, household wealth V (identity: V = H_h + B_h); [S] government/central-bank consolidated: bills B_s = H_s + B_cb.
+- **Transactions-flow matrix (households, govt, production, CB):** consumption −C/+C; govt spending +G/−G; taxes −T/+T; bill interest r·B_(−1) across sectors.
+- **Behavioral set:** C = α₁·YD + α₂·V_(−1); T = θ·Y; YD = Y − T + r·B_(−1); bill demand B_h/V = λ₀ + λ_r·r − λ_Y·(YD/V); money residual: ΔH = ΔB_s − ΔB_h.
+- **Dynamics:** Y = G + C (+ money closure). Steady state: Y* = G/θ.
+- Poietic build: household money/bills stocks + government bills; purely linear; validate Y* = G/θ and ΔV = 0 in steady state. Figures: `figures/gl_sim_balance.png`, `figures/gl_sim_tfm.png`.
