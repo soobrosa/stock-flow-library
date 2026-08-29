@@ -7,7 +7,7 @@
 - `[full-text]` — extracted from the actual paper/book (PDF in the library; verified equations/parameters)
 - `[canonical]` — re-specified from the standard documented structure of a well-known model (text not in library)
 
-**Now in the library as full text** (added 2026-08-29): Sterman 2000 *Business
+**Now in the library as full text** (Anna's Archive haul, 2026-08-29): Sterman 2000 *Business
 Dynamics* (1008 pp), Forrester 1961 *Industrial Dynamics* (480 pp), Forrester 1969 *Urban
 Dynamics* (scan), Meadows 1972 *Limits to Growth*, Meadows 2008 *Thinking in Systems* (epub),
 Godley & Lavoie 2007 *Monetary Economics* (2nd ed., 575 pp). Book-derived case upgrades:
@@ -20,7 +20,7 @@ Legend: stocks **[S]**, flows **[F]**, auxiliaries **[A]**. ⚠ = needs aging-ch
 
 ## A. Core textbooks
 
-### A1. Industrial Dynamics — Forrester (1961) `[canonical]`
+### A1. Industrial Dynamics — Forrester (1961) `[full-text]` (§7.3)
 1. **Inventory–workforce oscillation**: [S] Inventory, Workforce, Backlog; [F] Production start (desired production smoothed by inventory-coverage gap), Hiring/Layoff (workforce gap / adjustment time), Order fulfillment; [A] desired inventory (weeks-of-supply × demand), delivery delay, productivity. Signature behavior: damped oscillation from the two nested negative loops (inventory → production; workforce → output) with delays.
 2. **Advertising–sales loop**: [S] Sales backlog, Brand awareness; [F] orders, advertising spend; [A] ad budget as function of backlog (GF), awareness decay. Reinforcing loop: sales → profit → ads → awareness → orders.
 
@@ -35,17 +35,17 @@ Legend: stocks **[S]**, flows **[F]**, auxiliaries **[A]**. ⚠ = needs aging-ch
 5. **Thermostat/room heating**: [S] room temperature; [F] heat flow to outside (proportional to T_in − T_out), furnace heat input (on/off via threshold logic); [A] desired temperature, insulation coefficient. Simplest control-loop starter.
 6. **Predator–prey exercise**: same as case 38 (Lotka) with Goodman's pedagogical parameter set.
 
-### A4. Limits to Growth / World3 — Meadows et al. (1972) `[canonical]` ⚠
+### A4. Limits to Growth / World3 — Meadows et al. (1972) `[full-text]` (§7.4) ⚠
 7. **World3 core**: [S] Population (4-stage cohort chain: 0-14, 15-44, 45-64, 65+), Industrial capital, Service capital, Agricultural inputs (capital share), Arable land, Land fertility, Persistent pollution, Nonrenewable resource; [F] births/deaths (life-expectancy GF of health services, food, pollution), capital investment/discard (desired growth vs depreciation), pollution generation/assimilation (GF with delay), resource extraction (capital × yield GF); [A] food per capita (land × inputs / population GF), industrial output per capita, technology adaptation switches. Full build ~40 stocks/auxiliaries.
 8. **World3 subsystem (Population + Capital + Resource)**: same loop skeleton, 1/5 size: [S] Population, Capital, Resource; [F] births, deaths, investment, discard, extraction; [A] output per capita, resource yield GF, desired capital growth.
 
-### A5. Thinking in Systems — Meadows (2008) `[canonical]` (ch.2 already a repo fixture)
+### A5. Thinking in Systems — Meadows (2008) `[full-text]` (§7.5) (ch.2 already a repo fixture)
 9. **Bathtub**: [S] water volume; [F] inflow, outflow. Chapter 1 teaching case; smoke test.
 10. **Capital plant** (the `capital.test.mjs` fixture; Meadows ch.2 Figs 42–45): [S] capital; [F] investment (gross = depreciation + desired growth — the net-rate trap), depreciation; [A] desired growth rate, depreciation fraction.
 11. **Fishing fleet economy**: [S] fish, fleet capital; [F] regeneration (density GF), harvest (catch per boat GF), fleet investment (profit-driven); [A] price as scarcity GF, profit → gross investment. README's example build.
 12. **Renewable vs nonrenewable resource extraction**: [S] resource stock, capital; [F] regeneration or discovery (discovery = exploration capital × remaining-fraction GF), extraction; [A] yield-per-capital GF declining with stock; behavior: overshoot-and-collapse (renewable w/ slow regeneration) vs peak-and-decline (nonrenewable).
 
-### A6. Business Dynamics — Sterman (2000) `[canonical]`
+### A6. Business Dynamics — Sterman (2000) `[full-text]` (§7.1–7.2)
 13. **Beer Game chain** ⚠: [S] Inventory + Backlog + Supply line (orders in transit) at retailer, wholesaler, factory; [F] shipments (min of desired, available), orders; [A] anchor-and-adjust order policy: desired production = forecast demand + inventory-gap correction + supply-line correction. Build as 3 copies connected; lesson: supply-line neglect → oscillation amplification up the chain.
 14. **Workforce–overtime management**: [S] Workforce, Backlog; [F] hiring (delay via training pipeline stock), work accomplishment; [A] overtime fraction (schedule-pressure GF), fatigue GF reducing effective productivity.
 15. **Word-of-mouth market growth**: [S] Potential adopters, Adopters; [F] adoption = advertising (p·Potential) + WOM (q·Adopters/N·Potential, contact-rate GF on market saturation); = Bass (case 33) with marketing lever.
@@ -219,7 +219,7 @@ US 1900–2004, top-down MFA (units Tg Fe):
 - **Graphical-function showcases:** coffee stabilizer (4), reservoir (17), appliance diffusion (32), fishery (39), Nash cascade (41).
 - **Aging-chain/cohort stress tests ⚠:** Urban Dynamics (3), World3 (7), dwelling stock (25), WEEE (34), Leslie (42), iron cycle (48).
 - **Already in the repo:** Capital model (case 10) is the `capital.test.mjs` fixture; fishing economy (11) is the README example.
-- **Full-text specs available (15):** cases 21, 27, 32, 34, 35, 36, 37, 38, 39, 40, 42, 45, 46, 48 + C-ROADS in 6.9 — from PDFs in `stock-flow-library/`.
+- **Full-text specs available (25):** cases 1, 7, 9–14, 21, 27, 32, 34–40, 42, 45, 46, 48 (see sections 6–7) — from PDFs in `stock-flow-library/`.
 - **Calibration data anchors:** Bombay plague fit (6.6), Jinan parameters (6.2), Leslie Table 5 (6.8), 1995 US vehicle sales (6.8), C-ROADS fit metrics (6.9), iron-cycle lifetimes (6.11).
 
 ### 6.12 Model SIM — Godley & Lavoie 2007, ch. 3 (upgrades case 37) `[full-text]`
@@ -229,3 +229,60 @@ The complete simplest SFC model, from pp. 103–108 (balance sheet p. 104, trans
 - **Behavioral set:** C = α₁·YD + α₂·V_(−1); T = θ·Y; YD = Y − T + r·B_(−1); bill demand B_h/V = λ₀ + λ_r·r − λ_Y·(YD/V); money residual: ΔH = ΔB_s − ΔB_h.
 - **Dynamics:** Y = G + C (+ money closure). Steady state: Y* = G/θ.
 - Poietic build: household money/bills stocks + government bills; purely linear; validate Y* = G/θ and ΔV = 0 in steady state. Figures: `figures/gl_sim_balance.png`, `figures/gl_sim_tfm.png`.
+
+---
+
+## 7. Textbook deep-mining passes (2026-08-29)
+
+### 7.1 Sterman 2000 — anchor-and-adjust / stock management (cases 13, 14, 45) `[full-text]`
+The generic stock-management decision rule (ch.13 eqs 13-19…13-23) and its supply-chain form (ch.17 eqs 17-1…17-16):
+- **Stocks:** `S = INTEGRAL(AR − LR, S₀)` (17-1); supply line `SL = INTEGRAL(OR − AR, SL₀)` (17-10) — orders placed but not received.
+- **Anchor-and-adjust order rule:** `OR = MAX(0, EL + (S* − S)/SAT + (SL* − SL)/SLAT)` (17-13a), consolidated as `OR = MAX(0, EL + (ETS* − ETS)/SAT)` with effective total stock `ETS = S + WSL·SL` (17-13d). Robustness: MAX(0,·) wraps; expected loss `EL = SMOOTH(LR, …)`.
+- **Supply-line weight:** `WSL = SAT/SLAT` (17-13b). Rational WSL = 1; **estimated from 44 Beer-Game subjects: average WSL = 0.34** (Sterman 1989b, R²=0.71) — the origin of oscillation.
+- **Parameters (ch.17/18 base):** SAT = 1 wk; delivery delay = 3 wk; desired inventory = 400 units; capital-investment example: life 8 y, acquisition lag 1.5 y, SAT 3 y, SLAT 0.75 y → order amplification 8.0×.
+- **Manufacturing chain (ch.18 eqs 18-1…18-20, Table 18-1):** `Production = DELAY3(Production Start, MCT)`; `Desired Production = MAX(0, Expected Orders + (Desired Inv − Inv)/IAT)`; `Desired WIP = MCT × Desired Production`; coverage = MOPT + safety (2 + 2 wk); MCT = 8 wk; IAT = 8 wk; WIP adj = 2 wk; forecast averaging = 8 wk. Order-fulfillment ratio as GF of MSR/DSR.
+- Poietic: replicate the module 3× for the Beer Game; SMOOTH/DELAY3 expand to 1st/3rd-order delay stocks; WSL is the behavioral policy knob.
+
+### 7.2 Sterman 2000 — workforce & overtime (case 14) `[full-text]`
+From ch.19 (eqs 19-1…19-25) and ch.14 (eqs 14-16…14-27):
+- **Stocks:** `Labor = INTEGRAL(Hiring − Attrition, L₀)` (19-1); `Vacancies = INTEGRAL(Creation − Closure, V₀)` (19-4) — information stock of unfilled jobs.
+- **Flows:** `Attrition = Labor/Average Duration of Employment` (19-2); `Hiring = Vacancies/Time to Fill` (19-3).
+- **Policy:** `Desired Hiring = Expected Attrition + (Desired Labor − Labor)/Time to Adjust Labor` (19-11,19-13); `Desired Vacancies = E[Time to Fill] × Desired Hiring` (19-9); `Desired Labor = Desired Production/(Workweek × Productivity)` (19-21).
+- **Overtime:** `Workweek = Standard × f(Schedule Pressure)` (19-22), `Schedule Pressure = Desired Production/Standard Production` (19-24); GF saturates at 1.25 (50 h), floor 0.75 (30 h).
+- **Parameters:** employment duration 100 wk; time-to-fill 8 wk; vacancy-adjust 4 wk; labor-adjust 13 wk; Labor₀ = 1000; IAT 12 wk; WIP adj 6 wk; productivity 0.25 widgets/person-hour. Overtime cuts amplification 2.07 → 1.52 but lowers service (93% vs 88%).
+- **Task/backlog variant (ch.14):** `Backlog = INTEGRAL(Arrival − Completion)`; `Completion = MIN(Backlog/MinDeliveryDelay, Labor × Workweek/TPT)` (14-18,19); power-form GFs estimated on UK bank data: workweek `SP^0.56–0.69`, time-per-task `SP^−0.43–−0.30`.
+- **Rework benchmark (ch.2 §2.3):** first-pass quality **68% commercial / 34% defense**; rework discovery delay ≈ **9 months**; overruns 140%/190% (commercial) and 310%/460% (defense) cost/schedule.
+
+### 7.3 Forrester 1961 — the DYNAMO production-distribution system (case 1) `[full-text]`
+From ch.15 (equations 15-9…15-45; 2-up scan pagination fragments the listing; equations below transcribed from the surviving fragments and marked where reconstructed):
+- **Levels (retail; distributor/factory parallel with subscripts D, F):** `IAR.K = IAR.J + DT·(SRR.JK − SSR.JK)` (15-1, L); unfilled orders `UOR.K = UOR.J + DT·(RRR.JK − SSR.JK)` (15-19 style); pipeline `LAR.K = LAR.J + DT·(CPR.JK − SSR.JK)`; goods in transit `MTR.K = MTR.J + DT·(SDF.JK − SRR.JK)`.
+- **Ordering (15-9, R):** `CPR.KL = RRR.JK + [(IDR.K − IAR.K)/DIR] + [(LDR.K − LAR.K)] + [(UNR.K − UOR.K)]` — requisitions received + inventory gap + pipeline gap + unfilled-orders gap. Factory form (15-45, A): `MWF.K = RRF.JK + (IDF − IAF)/DIF + (LDF − LAF) + (UOF − UNF)`, actual `MDF.KL = MIN(MWF.K, capacity)`.
+- **Pipeline desired:** `LDR.K = (RSR.K)(DCR + DMR + DFD.K + DTR)` (15-12 style); distributor: `LDD.K = (RSD.K)(DCD + DMD + DFF.K + DTD)`; normal unfilled: `UNR.K = (RSR.K)(DHR + DUR)`.
+- **Desired inventory:** `IDR.K = (AIR)(RSR.K)` (15-3, A) — AIR weeks of average sales; smoothed sales `RSR.K = RSR.J + DT·(RRR.JK − RSR.J)/TAL` (15-4/A style; DELAY3 family).
+- **Constants (ch.15/16 tables):** `DIR = DID = DIF = 8 wk` (base; tested 1–26 wk); `DCR = 3`, `DCD = 2`, `DCF = 1` wk (clerical); `DMR = DMD = 0.5` wk (mail); `DTD = 2.0`, `DTR` wk (transport); `DCPF = 1` wk; delay-in-unfilled `DHR/DUR` weeks. Advertising awareness delay `DVC = 6 wk`.
+- Poietic: each pipeline (LAR, MTR) is a material-delay stock; each ordering rule is the anchor-and-adjust template of §7.1; the three sectors are copies with different constants.
+
+### 7.4 Meadows 1972 — World3 loop narrative (case 7) `[full-text]`
+The popular edition describes structure verbally + figures (no equation listing — that's in the 1974 technical volume, not in this library):
+- **Two core reinforcing loops (ch.1 §exponential growth, figures in ch.2):** population ← births (fertility × population) and population → deaths; capital ← investment (output × investment fraction) and capital → discard (depreciation). Interconnections between the two loops "constitute the rest of the world model."
+- **Population loop anchors (ch.1):** 1650: 0.5 B growing 0.3%/yr (doubling ~250 y); 1970: 3.6 B at 2.1%/yr (doubling 33 y) — "super-exponential."
+- **Nonlinear GFs documented (figs 27–34):** food-per-capita → life expectancy (saturating; +20 yr possible); industrial output per capita → resource use; GNP → birth rates; desired family size; pollution → lifetime. World-model runs: figs 35 (standard), 36-41 (resource doubling, unlimited resources/pollution scenarios).
+- **Feedback diagrams:** Fig 24 (population/capital/food), 25 (population/capital/pollution), 26 (population/capital/natural resources) — extracted as `figures/world3_feedback_loops.png`.
+- Poietic: full World3 needs the technical-architecture reference (Forrester 1971 *World Dynamics* or Meadows et al. 1974); the 1972 book alone supports the subsystem builds of case 8.
+
+### 7.5 Meadows 2008 ch.1–2 (cases 9, 10, 11, 12) `[full-text]`
+From the epub (ch.1 bathtub, ch.2 zoo):
+- **Capital (Figs 27–28):** output = capital/3 (output-per-unit-capital 1:3); investment = 20% × output; lifetime = 15 yr (depreciation 6.67%/yr) → dynamic equilibrium. Net-rate trap stated literally: thermostat/credit-card/hiring analogies — a balancing loop's goal must compensate concurrent drains.
+- **Nonrenewable oil economy (Figs 37–41):** [S] capital + resource (no inflow); lifetime 20 yr (5%/yr), desired growth 5%/yr, initial resource = 200-yr supply; yield GF falls with depletion; base run peaks extraction ~yr 40, shutdown ~yr 50; 7% growth scenario depletes within 40 yr; each doubling of reserves adds only ~14 yr (70-rule).
+- **Renewable fishery (Figs 42–45):** regeneration is a hump-shaped density GF (no equation given — supply a logistic); price rises as fish scarcer; three regimes by technology: equilibrium (base), overshoot+oscillation (sonar), overshoot+collapse (very good technology); "investment = profits if less than 5% desired" (MIN logic).
+- **Population anchors:** 6.6 B (2007), fertility 21/1000/yr, mortality 9/1000/yr.
+- Note: the phrase "footing the net rate" does not appear verbatim; the concept is the thermostat/credit-card passage above.
+
+### 7.6 Godley & Lavoie — Models PC and LP (case 37, beyond SIM) `[full-text]`
+From ch.4 (Model PC, portfolio choice) and ch.5 (Model LP, long-term bonds):
+- **PC stocks:** household money H_h + bills B_h = wealth V; government bills B_s = CB bills B_cb + H_s (consolidated CB+govt).
+- **PC equations (4.1–4.12):** `Y = C + G`; `YD = Y − T + r₋₁Bh₋₁`; `T = θ(Y + r₋₁Bh₋₁)`; `V = V₋₁ + (YD − C)`; `C = α₁YD + α₂V₋₁`; **Tobin portfolio share** `Bh/V = λ₀ + λ₁r − λ₂(YD/V)`; money = residual; `r = r̄` exogenous; CB buys bills residually.
+- **PC steady state (4.18–4.25):** `Y* = GNT/θ` with GNT = G + r·B*h(1−θ); wealth norm `V*/YD* = α₃ = (1−α₁)/α₂`; `YD* = G/[θ/(1−θ) − r((λ₀+λ₁r)α₃ − λ₂)]`; **counterintuitive: dY*/dr > 0** (higher thrift → higher steady income, via the debt-service channel).
+- **LP (5.1–5.24):** adds perpetuity bonds (value pbL·BL, yield 1/pbL); wealth includes capital gains `CG = ΔpbL·BLh₋₁` (in V, not in YD or C directly); three-asset Brainard–Tobin shares with column-additivity `λ₁₀+λ₂₀+λ₃₀ = 1`; expected bond return `ERrL = rL + χ(pLᵉ − pL)/pL`; CB pegs bill rate AND bond price (static expectations); short-run effect of higher long rate is negative (capital loss), long-run positive.
+- **Parameters:** not tabulated in text (in the book's model files); baseline figures show r = 2.5%, portfolio ≈ 0.77 money/0.23 bills; SIM's α₁=0.6, α₂=0.4, θ=0.2, G=20 as the natural continuation.
+- Poietic: purely linear; validate PC's steady state against 4.23–4.25; drop the redundant identity (4.6A / 4.12) exactly as the book does.

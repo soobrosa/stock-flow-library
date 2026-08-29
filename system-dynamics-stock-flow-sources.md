@@ -87,12 +87,12 @@ Each of these fields is rich in stock-flow models or directly convertible:
 3. Rahmandad, H. & Sterman, J.D. (2008). "Heterogeneity and network structure in the dynamics of diffusion: Comparing agent-based and differential equation models." *Management Science* 54(6): 998–1014. — the explicit bridge between SD and agent-based epidemic/diffusion models. [Open PDF](https://www.mit.edu/~jsterman/Rahmandad-Sterman_0512221.pdf)
 
 ### 2. Macroeconomics — Stock-Flow Consistent (SFC) models — [C→SD, arguably SD]
-1. Godley, W. & Lavoie, M. (2007). *Monetary Economics: An Integrated Approach to Credit, Money, Income, Production and Wealth*. Edward Elgar. — the SFC bible; balance sheets as stocks, transactions-flow matrix as flows. [Archive.org lending copy](https://archive.org/details/monetaryeconomic0000godl)
+1. Godley, W. & Lavoie, M. (2007). *Monetary Economics: An Integrated Approach to Credit, Money, Income, Production and Wealth*. Edward Elgar. — the SFC bible; balance sheets as stocks, transactions-flow matrix as flows. [Archive.org (borrowable)](https://archive.org/details/monetaryeconomic0000godl)
 2. Tobin, J. (1969). "A general equilibrium approach to monetary theory." *Journal of Money, Credit and Banking* 1(1): 15–29. — the root of stock-flow consistency in monetary theory. [Open PDF](https://mail.tku.edu.tw/niehcc/paper/T(1969-jmcb).pdf)
 3. Nikiforos, M. & Zezza, G. (2017). "Stock-flow consistent macroeconomic models: A survey." *Journal of Economic Surveys* 31(5): 1204–1239. — the entry-point survey; hundreds of simulatable models inside. [Open PDF (Levy WP version)](https://www.levyinstitute.org/pubs/wp_891.pdf)
 
 ### 3. Ecology & resource management — [C→SD]
-1. Lotka, A.J. (1925). *Elements of Physical Biology*. Williams & Wilkins. (with V. Volterra 1926) — predator–prey biomass stocks with birth/death/harvest flows. [Archive.org public-domain scan](https://archive.org/details/elementsofphysic017171mbp)
+1. Lotka, A.J. (1925). *Elements of Physical Biology*. Williams & Wilkins. (with V. Volterra 1926) — predator–prey biomass stocks with birth/death/harvest flows. [Archive.org full scan](https://archive.org/details/elementsofphysic017171mbp)
 2. Gordon, H.S. (1954). "The economic theory of a common-property resource: The fishery." *Journal of Political Economy* 62(2): 124–142. — Gordon–Schaefer fishery: biomass stock vs harvest flow; the classic renewable-resource model. [Open PDF](https://www.econ.ucsb.edu/~tedb/Courses/Ec100C/Readings/ScottGordonFisheries.pdf)
 3. Odum, H.T. (1996). *Environmental Accounting: EMERGY and Environmental Decision Making*. Wiley. — whole notation for stocks/flows of energy and matter in ecosystems (see also his 1971 *Environment, Power, and Society*). [Publisher](https://www.wiley.com/en-us/Environmental+Accounting:+Emergy+and+Environmental+Decision+Making-p-9780471114420)
 
@@ -113,7 +113,7 @@ Each of these fields is rich in stock-flow models or directly convertible:
 
 ### 7. Pharmacokinetics / physiology — [C→SD]
 1. Teorell, T. (1937). "Kinetics of distribution of substances administered to the body." *Archives Internationales de Pharmacodynamie* 57: 205–225. — the founding compartmental PK model. (No open copy; citation verified via secondary literature.)
-2. Gibaldi, M. & Perrier, D. (1982). *Pharmacokinetics*, 2nd ed. Marcel Dekker. — the standard text; every model is compartments (stocks) and clearance (flows). [Archive.org lending copy](https://archive.org/details/pharmacokinetics15milo)
+2. Gibaldi, M. & Perrier, D. (1982). *Pharmacokinetics*, 2nd ed. Marcel Dekker. — the standard text; every model is compartments (stocks) and clearance (flows). [Archive.org (borrowable)](https://archive.org/details/pharmacokinetics15milo)
 3. Reddy, M.B., Yang, R.S.H., Clewell, H.J., Andersen, M.E. (2005). *Physiologically Based Pharmacokinetic Modeling: Science and Applications*. Wiley. — the PBPK reference; organ compartments as physical stocks. [DOI](https://doi.org/10.1002/0471478768)
 
 ### 8. Chemical & process engineering — [C→SD]
@@ -123,7 +123,7 @@ Each of these fields is rich in stock-flow models or directly convertible:
 
 ### 9. Operations & supply chain — [SD]/[C→SD]
 1. Sterman, J.D. (1989). "Modeling managerial behavior: Misperceptions of feedback in a dynamic decision making experiment." *Management Science* 35(3): 321–339. — the Beer Game: inventory stocks, order and backlog flows. [DOI](https://doi.org/10.1287/mnsc.35.3.321)
-2. Hopp, W.J. & Spearman, M.L. (2011). *Factory Physics*, 3rd ed. McGraw-Hill. — Little's Law formalizes queue-as-stock (WIP) and throughput-as-flow. [Archive.org lending copy, 1st ed.](https://archive.org/details/isbn_9780025624795)
+2. Hopp, W.J. & Spearman, M.L. (2011). *Factory Physics*, 3rd ed. McGraw-Hill. — Little's Law formalizes queue-as-stock (WIP) and throughput-as-flow. [Archive.org (1st ed., borrowable)](https://archive.org/details/isbn_9780025624795)
 3. Clark, A.J. & Scarf, H. (1960). "Optimal policies for a multi-echelon inventory problem." *Management Science* 6(4): 475–490. — the founding multi-echelon inventory-stock model. [Open PDF (Yale)](http://dido.econ.yale.edu/~hes/pub/echelon1.pdf)
 
 ### 10. Energy systems & vehicle fleets — [C→SD] (same math as §2.2 building cohorts)
@@ -132,7 +132,7 @@ Each of these fields is rich in stock-flow models or directly convertible:
 3. Messner, S. & Strubegger, M. (1995). *User's Guide for MESSAGE III*. IIASA WP-95-069. — power-generation capacity vintages with installation/retirement flows (the IAM stock-accounting standard; also the basis of TIMES/Veda accounting). [Open PDF (IIASA)](https://pure.iiasa.ac.at/id/eprint/4527/1/WP-95-069.pdf)
 
 ### 11. Reliability & maintainability engineering — [C→SD] (pairs with §2.3 deterioration)
-1. Barlow, R.E. & Proschan, F. (1975). *Statistical Theory of Reliability and Life Testing*. Holt, Rinehart & Winston. — state-transition foundations. [Archive.org lending copy](https://archive.org/details/statisticaltheor0000barl)
+1. Barlow, R.E. & Proschan, F. (1975). *Statistical Theory of Reliability and Life Testing*. Holt, Rinehart & Winston. — state-transition foundations. [Archive.org (borrowable)](https://archive.org/details/statisticaltheor0000barl)
 2. Billinton, R. & Allan, R.N. (1992). *Reliability Evaluation of Engineering Systems*, 2nd ed. Plenum. — Markov availability models: operating/degraded/failed states as stocks. [Open PDF (Springer)](https://link.springer.com/content/pdf/10.1007/978-1-4899-0685-4.pdf)
 3. Rausand, M. & Høyland, A. (2004). *System Reliability Theory: Models, Statistical Methods, and Applications*, 2nd ed. Wiley. — the modern reference; repair/renewal flows between state stocks. [Publisher (Wiley Online)](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119373940)
 
@@ -145,13 +145,13 @@ Each of these fields is rich in stock-flow models or directly convertible:
 
 ## 5. Where to keep mining
 
-### 5.1 Collection status (updated 2026-08-29)
+### 5.1 Collection status (as of 2026-08-28)
 
-23 sources are in the library as PDFs (validated, named `Author_Year.pdf`), plus one epub:
+17 of the sources are downloaded as PDFs in `stock-flow-library/` (validated, named `Author_Year.pdf`):
 Kermack-McKendrick 1927, Lotka 1925, Tobin 1969, Leslie 1945, Nash-era hydrology (Nash 1957 not obtained),
 Clark-Scarf 1960, Gordon 1954, Greenspan-Cohen 1999, Sterman 2013 C-ROADS, Rahmandad-Sterman 2008,
 Nikiforos-Zezza 2017, Messner-Strubegger 1995, Muller 2006 PNAS, Fiddaman 1997 MIT thesis,
-McNeil 2010, WEEE 2018 (Kobe RIEB WP version of the JCP paper), Zhang 2021, Lyneis-Ford 2007. Books: Sterman 2000, Forrester 1961, Forrester 1969 (scan), Meadows 1972, Meadows 2008 (epub), Godley-Lavoie 2007.
+McNeil 2010, WEEE 2018 (Kobe RIEB WP version of the JCP paper), Zhang 2021, Lyneis-Ford 2007.
 
 Acquisition methods that worked: direct repository URLs (OSTI, IIASA, Levy, MIT DSpace API, Yale, UCSB,
 UTah, Federal Reserve, Europe PMC `?pdf=render`, Royal Society via Wayback `web.archive.org/web/<year>id_/...`).
@@ -163,11 +163,13 @@ A headed agent-browser session + one human Turnstile click DID clear Wiley once 
 but Wiley's session cookie did not persist across subsequent pdfdirect URLs. Springer has no bot wall but
 those papers are paywalled outright.
 
-Still missing: Abbas-Bell 1994, Anderson-May 1991, Barlow-Proschan 1975, Bergsdal 2007,
-Billinton-Allan 1992, Brunner-Rechberger 2016, Cooper 1980, Gibaldi-Perrier 1982, Hakansson 2020,
-Hopp-Spearman 2011 (3rd ed.), Luyben 1996, Nash 1957, Nordhaus 1994, Park-PenaMora 2003,
-Preston 2001, Ramkrishna 2000, Reddy 2005, Richardson-Pugh 1981, Rogers 1995, Rausand-Hoyland 2004,
-Stave 2003, Sugawara 1961, Teorell 1937, van Schaik-Reuter 2009, and the JORS 1995 appliance paper.
+Still missing (no legitimate open copy found; needs institutional access, Archive.org borrowing,
+or author request): Abbas-Bell 1994, Anderson-May 1991, Barlow-Proschan 1975, Bergsdal 2007,
+Billinton-Allan 1992, Brunner-Rechberger 2016, Cooper 1980, Forrester 1961/1969, Gibaldi-Perrier 1982,
+Godley-Lavoie 2007, Hakansson 2020, Hopp-Spearman 2011 (3rd ed.), Luyben 1996, Meadows 1972/2008,
+Nash 1957, Nordhaus 1994, Park-PenaMora 2003, Preston 2001, Ramkrishna 2000, Reddy 2005, Richardson-Pugh 1981,
+Rogers 1995, Rausand-Hoyland 2004, Stave 2003, Sterman 1989/2000, Sugawara 1961, Teorell 1937,
+van Schaik-Reuter 2009, and the JORS 1995 appliance paper.
 
 - *System Dynamics Review* (Wiley) — search "construction", "infrastructure", "energy", "appliance".
 - System Dynamics Society conference proceedings (free online; <systemdynamics.org>) — hundreds of domain models each year.
