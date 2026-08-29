@@ -20,6 +20,14 @@ GAP_PT = 28          # vertical gap (points) that ends a figure block
 
 # (name, pdf stem, caption regex, mode, page hint)
 FIGURES = [
+    # --- books (Anna's Archive haul) ---
+    ("sterman_sfd",              "Sterman_2000_Business-Dynamics",       r"Figure 2-6 shows",                         "above", 83),
+    ("gl_sim_balance",           "Godley-Lavoie_2007_Monetary-Economics", r"Balance sheet of Model SIM",              "above", 104),
+    ("gl_sim_tfm",               "Godley-Lavoie_2007_Monetary-Economics", r"Accounting \(transactions\) matrix for Model SIM", "above", 105),
+    ("forrester61_fig1",         "Forrester_1961_Industrial-Dynamics",   r"Figure 1-1\.? The art",                    "above", 16),
+    ("world3_feedback_loops",    "Meadows_1972_Limits-to-Growth",        r"Figure 24 FEEDBACK LOOPS",                 "above", 108),
+    ("urban_dynamics_scan",      "Forrester_1969_Urban-Dynamics",        r"",                                         "page",  30),
+    # --- papers (existing) ---
     ("rework_cycle",     "Lyneis-Ford_2007_PM-survey",           r"Fig\.?\s*1\.?\s*The rework",                 "above", None),
     ("pm_control_loops", "Lyneis-Ford_2007_PM-survey",           r"Fig\.?\s*2\.?\s*Controlling feedback",       "above", None),
     ("pm_ripple",        "Lyneis-Ford_2007_PM-survey",           r"Fig\.?\s*3\.?\s*Policy resistance",          "above", None),
@@ -66,7 +74,7 @@ def trim(im, pad=12, thresh=245):
 for name, stem, regex, mode, hint in FIGURES:
     pdf = LIB / f"{stem}.pdf"
     if not pdf.exists(): print(f"SKIP {name}: no pdf"); continue
-    page = find_page(pdf, regex, hint)
+    page = find_page(pdf, regex, hint) if regex else hint
     if not page: print(f"SKIP {name}: no caption page"); continue
     words = page_words(pdf, page)
     # group words into rows (merge rows within 4pt), then match caption against row text
